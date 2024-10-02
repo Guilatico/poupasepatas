@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poupasepatas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 120;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            margin: 0;
+            padding: 1em;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 2em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .animal {
+            background-color: white;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 1em);
+            box-sizing: border-box;
+        }
+        .animal img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .contact {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="imagens/logo branco.png"  height="200px" width="200px">
+</header>
+
+<nav>
+    <a href="sobre nos.html">Sobre nós</a>
+    <a href="index.html">Animais para Adoção</a>
+    <a href="contactos.html">Contatos</a>
+</nav>
+
+<div class="container">
+    <section id="sobre">
+    </section>
+
+    <section id="animais">
+        <h2>Animais para Adoção</h2>
+        <div class="gallery">
+            <div class="animal">
+                <a href="remy.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDyf3erUaHeIwvpuk2OzoPfVCPzAFe-S0X7f87QIKq5GUh-NQXbN4lHEDvZnOXFlySefY&usqp=CAU"alt="Cão 1">
+                </a>
+                <h3>Remy</h3>
+                <p>Idade: 3 anos</p>
+                <p>Raça: Porquinho da India</p>
+                <p>Descrição: Remy gosta de comer legumes como alface e cenoura, esta sempre a dormir.</p>
+            </div>
+            <div class="animal">
+                <a href="jade.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYu42xrQFzX8Rp_o6CZM_rEHdczspYrKoGFw&s" alt="Gato 1">
+                </a>
+                <h3>Jade</h3>
+                <p>Idade: 2 anos</p>
+                <p>Raça: Catatua</p>
+                <p>Descrição: Jade é uma Catatua cheia de energia e muito carinhosa</p>
+            </div>
+            <div class="animal">
+                <a href="stuart.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXUquBmiUd95fK-U0VDsN1tm3lW915TTKKXQ&s" alt="Cão 2">
+                </a>
+                <h3>Stuart</h3>
+                <p>Idade: 1 ano</p>
+                <p>Raça: Rato-Canguru</p>
+                <p>Descrição: Stuard um rato-Canguru amigável que gosta de comer.</p>
+            </div>
+            <div class="animal">
+                <a href="deden.html">
+                <img src="https://img.freepik.com/fotos-premium/rato-canguru-no-deserto-de-utah_119570-469.jpg" height="200px" width="250px" alt="Cão 2">
+                </a>
+                <h3>Déden</h3>
+                <p>Idade: 1 ano</p>
+                <p>Raça: Rato-Canguru</p>
+                <p>Descrição: Déden é um rato muito quieto que gosta de descansar 
+                    à sombra.</p>
+            </div>
+            <div class="animal">
+                <a href="pachi.html">
+                <img src="data:image/jpeg;base64,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" alt="Cão 2">
+                </a>
+                <h3>Pachi</h3>
+                <p>Idade: 2 meses</p>
+                <p>Raça: Chinchila</p>
+                <p>Descrição: Ela é delicada e muito nova podendo aprender pequenos truques</p>
+            </div>
+            <div class="animal">
+                <a href="tuko.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMTwFC3IWZL_GQCLng342-rIgZ852WfX4D-w&s" alt="Cão 2">
+                </a>
+                <h3>Tuko</h3>
+                <p>Idade: 5 ano</p>
+                <p>Raça: Gerbo</p>
+                <p>Descrição: Tuko é um gerbo pequeno e divertido.</p>
+            </div>
+            <div class="animal">
+                <a href="bobby.html">
+                <img src="https://s.cafebazaar.ir/images/icons/com.ghsoft.hamsterparvaresh-cb74f755-770e-499d-be0c-5234d5189482_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize" alt="Cão 2">
+                </a>
+                <h3>Bobby</h3>
+                <p>Idade: 4 anos</p>
+                <p>Raça: Hamsters</p>
+                <p>Descrição: Bobby é um hamster preguiçoso.</p>
+            </div>
+            <div class="animal">
+                <a href="peteresuny.html">
+                <img src="https://c-fa.cdn.smule.com/rs-s-sf-4/arr/13/9a/96fe2ef6-489d-4f9e-9755-5fb69dd7985c.jpg" alt="Cão 2">
+                </a>
+                <h3>Peter e Suny</h3>
+                <p>Idade: 6 anos</p>
+                <p>Raça: Papagaios</p>
+                <p>Descrição: Peter é um papagaio tagarela e muito animado já Suny é muito inteligênte</p>
+            </div>
+            <div class="animal">
+                <a href="holiver.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbNja-iXHpF1uRn6OykDAmG7nNtDmNN4Sfw&s" alt="Cão 2">
+                </a>
+                <h3>Holiver</h3>
+                <p>Idade: 2 anos</p>
+                <p>Raça: Calopsita</p>
+                <p>Descrição: Holiver é uma calopsita que esta sempre a dormir.</p>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<footer class="contact">
+    <p>&copy; 2024 Adoção de Animais. Feito em âmbito escolar.</p>
+</footer>
+
+</body>
+</html>
